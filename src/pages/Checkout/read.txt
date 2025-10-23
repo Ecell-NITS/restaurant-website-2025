@@ -1,0 +1,10 @@
+:root {
+  --page-bg: #e8e2d1;
+  --card-bg: #f2ba8fff;
+  --heading-text: #861d1d;
+  --border-dark: #2b1e1a;
+  --button-primary: #bf6f31;
+  --button-accent: #f4b34c;
+  --text-dark: #2b1e1a;
+  --shadow-light: rgba(0, 0, 0, 0.2);
+}

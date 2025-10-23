@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home/home';
 import Menu from './pages/Menu/menu';
+import Checkout from './pages/Checkout/checkout';
+import Confirmation from './pages/Checkout/confirmation';
 import './App.css';
 
 function App() {
@@ -15,6 +17,9 @@ function App() {
           <Link to="/menu" className="text-blue-600 hover:underline">
             Menu
           </Link>
+          <Link to="/checkout" className="text-blue-600 hover:underline">
+            checkout
+          </Link>
         </nav>
       </header>
 
@@ -22,6 +27,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/menu" element={<Menu />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/confirmation" element={<Confirmation />} />
         </Routes>
       </main>
     </Router>
