@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --page-bg: #e8e2d1;
+  --card-bg: #ebccb4;
+  --heading-text: #861d1d;
+  --border-dark: #2b1e1a;
+  --button-primary: #bf6f31;
+  --button-accent: #f4b34c;
+  --text-dark: #2b1e1a;
+  --shadow-light: rgba(0, 0, 0, 0.2);
+}
+
+body {
+  user-select: none;
+}
+
+.snackbar {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--restro-header);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  animation: slide-in 0.3s ease-out forwards;
+  z-index: 50;
+}
+
+.snackbar button {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  background-color: white;
+  color: var(--restro-header);
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.snackbar button:hover {
+  opacity: 0.9;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-50%) translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(100%);
+    opacity: 0;
+  }
+}
