@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import logo from './logo.png';
+import Confirmation from './confirmation';
+import logo from '../../assets/logo.png';
+
 import { useNavigate } from 'react-router-dom';
 
 function CheckoutMine() {
@@ -11,7 +13,7 @@ function CheckoutMine() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch('/cartItems.json')
+    fetch('/data/cartItems.json')
       .then((res) => res.json())
       .then((data) => {
         setCartItems(data);

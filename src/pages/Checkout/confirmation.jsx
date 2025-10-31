@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import confirmLogo from './confirm.png';
+import confirmLogo from '../../assets/confirm.png';
 
 function Confirmation() {
   const [tokenNo, setTokenNo] = useState('');
   const [time, setTime] = useState('');
 
   useEffect(() => {
-    fetch('/token.json', {
+    fetch('/data/token.json', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -23,7 +23,7 @@ function Confirmation() {
   }, []);
 
   return (
-    <div className="bg-[#e8e2d1] h-full">
+    <div id="outer" className="bg-[#e8e2d1] h-full">
       {/* circles */}
       <div className="flex justify-center py-4">
         <div className="h-52 w-52 border-1 border-black rounded-full flex justify-center items-center bg-[#ecb45a]">
