@@ -4,6 +4,7 @@ import Home from './pages/Home/home';
 import Menu from './pages/Menu/menu';
 import Checkout from './pages/Checkout/checkout';
 import Confirmation from './pages/Checkout/confirmation';
+import Cart from './pages/Cart/cart';
 import './App.css';
 
 function App() {
@@ -19,6 +20,8 @@ function App() {
           </Link>
           <Link to="/checkout" className="text-blue-600 hover:underline">
             checkout
+          <Link to="/cart" className="text-blue-600 hover:underline">
+            Cart
           </Link>
         </nav>
       </header>
@@ -29,6 +32,7 @@ function App() {
           <Route path="/menu" element={<Menu />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/confirmation" element={<Confirmation />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
       </main>
     </Router>

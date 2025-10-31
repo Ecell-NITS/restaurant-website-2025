@@ -46,5 +46,43 @@
     "qty": 1,
     "image": "/images/chocolate-shake.jpg",
     "description": "Thick and creamy shake with chocolate syrup."
+    "id": 1,
+    "name": "Margherita Pizza",
+    "price": 299
+  },
+  {
+    "id": 2,
+    "name": "Veg Burger",
+    "price": 199
+  },
+  {
+    "id": 3,
+    "name": "Veg Chowmein",
+    "price": 159
+  },
+  {
+    "id": 4,
+    "name": "Veg Chowmein 4",
+    "price": 159
+  },
+  {
+    "id": 5,
+    "name": "Veg Chowmein 5",
+    "price": 159
+  },
+  {
+    "id": 6,
+    "name": "Veg Chowmein 6",
+    "price": 159
+  },
+  {
+    "id": 7,
+    "name": "Veg Chowmein 7",
+    "price": 159
+  },
+  {
+    "id": 8,
+    "name": "Veg Chowmein 8",
+    "price": 159
   }
 ]
