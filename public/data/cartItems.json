@@ -1,5 +1,51 @@
 [
   {
+    "id": "1",
+    "name": "Veg Burger",
+    "price": 299,
+    "qty": 2,
+    "image": "/images/veg-burger.jpg",
+    "description": "A delicious burger made with fresh vegetables and cheese."
+  },
+  {
+    "id": "2",
+    "name": "Cheese Pizza",
+    "price": 499,
+    "qty": 1,
+    "image": "/images/cheese-pizza.jpg",
+    "description": "Classic cheese pizza with mozzarella and tomato sauce."
+  },
+  {
+    "id": "3",
+    "name": "French Fries",
+    "price": 149,
+    "qty": 3,
+    "image": "/images/french-fries.jpg",
+    "description": "Crispy golden fries served with ketchup."
+  },
+  {
+    "id": "4",
+    "name": "Grilled Sandwich",
+    "price": 199,
+    "qty": 2,
+    "image": "/images/grilled-sandwich.jpg",
+    "description": "Grilled cheese sandwich stuffed with veggies."
+  },
+  {
+    "id": "5",
+    "name": "Cold Coffee",
+    "price": 129,
+    "qty": 2,
+    "image": "/images/cold-coffee.jpg",
+    "description": "Refreshing iced coffee topped with cream."
+  },
+  {
+    "id": "6",
+    "name": "Chocolate Shake",
+    "price": 179,
+    "qty": 1,
+    "image": "/images/chocolate-shake.jpg",
+    "description": "Thick and creamy shake with chocolate syrup."
     "id": 1,
     "name": "Margherita Pizza",
     "price": 299
