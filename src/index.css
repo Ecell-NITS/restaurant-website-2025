@@ -2,4 +2,43 @@
 
 body {
   margin: 0;
+  padding: 0;
+}
+.font-lily {
+  font-family: 'Lily Script One', cursive;
+}
+.playfair {
+  font-family: 'playfair Display', serif;
+}
+.instrument-serif {
+  font-family: 'Instrument Serif', serif;
+}
+.itelianno {
+  font-family: 'Italianno', cursive;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg) translateX(22vh) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(22vh) rotate(-360deg);
+  }
+}
+. .animate-rotate {
+  animation: rotate 10s linear infinite;
+}
+.circle-item:nth-child(2) {
+  transform: translate(-50%, -50%) rotate(0deg) translate(13vw) rotate(-0deg);
+}
+.circle-item:nth-child(3) {
+  transform: translate(-50%, -50%) rotate(72deg) translate(13vw) rotate(-72deg);
+}
+.circle-item:nth-child(4) {
+  transform: translate(-50%, -50%) rotate(144deg) translate(13vw) rotate(-144deg);
+}
+.circle-item:nth-child(5) {
+  transform: translate(-50%, -50%) rotate(216deg) translate(13vw) rotate(-216deg);
+}
+.circle-item:nth-child(6) {
+  transform: translate(-50%, -50%) rotate(288deg) translate(13vw) rotate(-288deg);
 }
