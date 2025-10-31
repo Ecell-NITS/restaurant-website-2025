@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Trash2, Undo2, ShoppingCart } from 'lucide-react';
-import Logo from './logo.png';
+import Logo from '../../assets/images/logo.png';
 import './cart.module.css';
 
 const CartPage = () => {
@@ -10,7 +10,7 @@ const CartPage = () => {
   const [lastRemoved, setLastRemoved] = useState(null);
 
   useEffect(() => {
-    fetch('/cartItems.json')
+    fetch('/data/cartItems.json')
       .then((res) => res.json())
       .then((data) =>
         setCartItems(data.map((item) => ({ ...item, qty: 1, price: Number(item.price) })))
