@@ -16,6 +16,9 @@ body {
 .itelianno {
   font-family: 'Italianno', cursive;
 }
+.font-mukta {
+  font-family: 'Mukta Malar', sans-serif;
+}
 @keyframes rotate {
   from {
     transform: rotate(0deg) translateX(22vh) rotate(0deg);

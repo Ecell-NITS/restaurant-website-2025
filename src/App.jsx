@@ -30,13 +30,25 @@ function App() {
             </div>
 
             <div>
-              <Link to="/visit" smooth={true} duration={600} className="hover:underline">
+              <Link
+                to="#"
+                onClick={() => {
+                  document.getElementById('visit')?.scrollIntoView({ behaviour: 'smooth' });
+                }}
+                className="hover:underline"
+              >
                 VisitUs
               </Link>
             </div>
 
             <div>
-              <Link to="/Serives" className=" hover:underline">
+              <Link
+                to="#"
+                onClick={() => {
+                  document.getElementById('services')?.scrollIntoView({ behaviour: 'smooth' });
+                }}
+                className=" hover:underline"
+              >
                 Services
               </Link>
             </div>
@@ -62,7 +74,7 @@ function App() {
 
             <div className="absolute mt-[59vh] sm:mt-[56vh] md:mt-[56vh] lg:mt-[58vh] ml-[-4vw] sm:ml-[-8vw] md:ml-[-8vw] lg:ml-[-20vw] inset-0 flex flex-col text-center leading-none text-[16vw] md:text-[15vw] lg:text-[9vw] w-full h-[10vh]">
               <p className="text-[#861D1D] [-webkit-text-stroke:0.008em_#E8E2D1] playfair">
-                Welcome To <br /> Hogsmede{' '}
+                Welcome To <br /> Hogsmede
               </p>
             </div>
           </div>
@@ -71,7 +83,10 @@ function App() {
             <div className="bg-[#BF6F31] w-[34vw] h-[5.02vh] md:w-[40vw] md:h-[9vh] lg:w-[34vw] lg:h-[11vh] rounded-full">
               <p>
                 <Link
-                  to="/menu"
+                  to="#"
+                  onClick={() => {
+                    document.getElementById('items')?.scrollIntoView({ behaviour: 'smooth' });
+                  }}
                   className="text-[#FFFFFF] hover:underline instrument-serif font-medium text-[5vw] md:text-[5vw] lg:text-[4vw] flex items-center justify-center"
                 >
                   View Menu
@@ -82,10 +97,13 @@ function App() {
             <div className="bg-[#BF6F31] w-[34vw] h-[5.02vh] md:w-[40vw] md:h-[9vh] lg:w-[34vw] lg:h-[11vh] rounded-full">
               <p>
                 <Link
-                  to="/menu"
+                  to="#"
+                  onClick={() => {
+                    document.getElementById('book-table')?.scrollIntoView({ behaviour: 'smooth' });
+                  }}
                   className="text-[#FFFFFF] hover:underline instrument-serif font-medium text-[5vw] md:text-[5vw] lg:text-[4vw] flex items-center justify-center"
                 >
-                  Order Now
+                  Book a table
                 </Link>
               </p>
             </div>
@@ -101,55 +119,16 @@ function App() {
         </div>
       </thirdsection>
 
-      <fourthsection className="w-full h-[100vh]">
-        <div className="relative overflow-hidden items-center justify-center w-[100vw] h-[40vh] md:h-[100vh] bg-[#E8E2D1]">
-          <div className="bg-[#E8E2D1] absolute flex justify-center items-center">
-            <img
-              src="https://res.cloudinary.com/dw3n9vflw/image/upload/v1760954955/6-pcs-13-scalloped-shell-pattern-plastic-serving-plates-30869055340607_700x700-removebg-preview_1-removebg-preview_eufgsx.png"
-              className="w-[55vw] h-[20vh] ml-[17vw] mt-[-3vh] md:ml-[26vw] lg:ml-[26vw] sm:w-[37vw] sm:h-[29vh] md:w-[43vw] md:h-[33vh] lg:w-[44vw] lg:h-[49vh] xl:w-[46vw] xl:h-[52vh] justify-center items-center "
-            ></img>
-          </div>
-
-          <div className="relative ">
-            <div className="circle-item absolute top-1/2 left-1/2 w-[12vw] h-[12vw]">
-              <img
-                src="https://res.cloudinary.com/dw3n9vflw/image/upload/v1761049896/Food_Img_5_ivo75w.jpg"
-                className="absolute w-full h-full rounded-full object-cover"
-              />
-            </div>
-
-            <div className="circle-item absolute top-1/2 left-1/2 w-[12vw] h-[12vh]">
-              <img
-                src="https://res.cloudinary.com/dw3n9vflw/image/upload/v1761159124/Food_Img_4_z0gzse.jpg"
-                className="absolute w-full h-full rounded-full object-cover"
-              />
-            </div>
-
-            <div className="circle-item absolute top-1/2 left-1/2 w-[12vw] h-[12vw]">
-              <img
-                src="https://res.cloudinary.com/dw3n9vflw/image/upload/v1761159359/Food_Img_2_qju8sy.jpg"
-                className="absolute w-full h-full rounded-full object-cover"
-              />
-            </div>
-
-            <div className="circle-item absolute top-1/2 left-1/2 w-[12vw] h-[12vw]">
-              <img
-                src="https://res.cloudinary.com/dw3n9vflw/image/upload/v1761159374/Food_Img_3_bsu2oz.jpg"
-                className="absolute w-full h-full rounded-full object-cover"
-              />
-            </div>
-
-            <div className="circle-item absolute top-1/2 left-1/2 w-[12vw] h-[12vw]">
-              <img
-                src="https://res.cloudinary.com/dw3n9vflw/image/upload/v1761159376/Food_Img_6_refzla.jpg"
-                className="absolute w-full h-full rounded-full object-cover"
-              />
-            </div>
-          </div>
+      <fourthsection id="items" className="w-full h-auto">
+        <div className="w-full h-auto">
+          <img
+            src="https://res.cloudinary.com/dw3n9vflw/image/upload/v1762010306/Frame_13__3_-removebg-preview_joddbo.png"
+            className="bg-[#E8E2D1] w-full h-auto"
+          ></img>
         </div>
       </fourthsection>
 
-      <fifthsection>
+      <fifthsection id="visit">
         <div className="w-full h-[13vh] md:h-[20vh] lg:h-[25vh] overflow-hidden bg-[#2B1E1A]">
           <p className="text-[#861D1D] itelianno flex justify-center pt-[2vh] items-center font-normal text-[10vw] md:text-[8vw]">
             Visit Us
@@ -157,26 +136,119 @@ function App() {
         </div>
       </fifthsection>
 
-      <sixthsection className="w-full h-[100vh] bg-[#E8E2D1]">
-        <div className="flex px-[4vw] py-[4vh] flex-row gap-[3vw]">
-          <div className="w-[50vw] bg-[#F4B34C] px-[4vw] py-[4vh]"></div>
+      <sixthsection className="w-full">
+        <div className="flex bg-[#E8E2D1] px-[4vw] py-[4vh] items-stretch flex-row gap-[3vw] h-full">
+          <div id="book-table" className="w-[50vw] bg-[#F4B34C] px-[4vw] py-[2vh]">
+            <div className="instrument-serif text-[3vh] sm:text-[5vh] md:text-[6vh] lg:text-[7vh]">
+              <p className="flex flex-row gap-[1vh]">Opening Hours</p>
+            </div>
 
-          <div className="w-[50vw]">
+            <p className="text-[1vh] sm:text-[2vh] md:text-[3vh] lg:text-[4vh] font-mukta">
+              Mon - Thu: 11:00 AM - 9:00 PM
+              <br />
+              Fri - Sat: 11:00 AM - 10:00 PM
+              <br />
+              Sun: 12:00 PM - 8:00 PM
+              <br />
+              *Bookings Available
+            </p>
+
+            <div className="instrument-serif mt-[2vh] md:mt-[0] text-[3vh] sm:text-[5vh] md:text-[6vh] lg:text-[7vh]">
+              <p className="flex flex-row gap-[1vh]">Book a table</p>
+            </div>
+
+            <div className=" text-[#861D1D] mb-[2vh]">
+              <form
+                action="https://formsubmit.co/muskanagarwala01@gmail.com"
+                method="POST"
+                class="md:gap-[1vh] mt-[1.5vh] md:mt-[0]"
+              >
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Fill your Name"
+                  class="w-full text-[2vh] md:text-[4vh] lg:text-[5vh] bg-[#EBCCB4] h-[3vh] sm:h-[6vh] md:h-[7vh] lg:h-[9vh] px-2 py-2 rounded-sm lg:rounded-lg border"
+                  required
+                />
+                <input
+                  type="text"
+                  name="date"
+                  placeholder="DD-MM-YYYY"
+                  class="w-full md:mt-[1.5vh] text-[2vh] md:text-[4vh] lg:text-[5vh] bg-[#EBCCB4] h-[3vh] sm:h-[6vh] md:h-[7vh] lg:h-[9vh] px-2 py-2 rounded-sm lg:rounded-lg border"
+                  required
+                />
+
+                <div class="flex gap-[2vw] mt-[1vh] md:gap-[1vw]">
+                  <select
+                    name="hour"
+                    class="bg-[#EBCCB4] h-[4vh] w-[20vw] md:px-[2vw] md:h-[6vh] md:w-[24vw] lg:h-[7vh] lg:w-[26vw] text-[1.5vh] md:text-[2.5vh] lg:text-[3.5vh] rounded-md border"
+                    required
+                  >
+                    <option value="">Hour</option>
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>06</option>
+                    <option>07</option>
+                    <option>08</option>
+                    <option>09</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                  </select>
+
+                  <select
+                    name="minute"
+                    class="bg-[#EBCCB4] h-[4vh] w-[20vw] md:px-[2vw] md:h-[6vh] md:w-[24vw] lg:h-[7vh] lg:w-[26vw] md:text-[2.5vh] lg:text-[3.5vh] text-[1.5vh] rounded-md border"
+                    required
+                  >
+                    <option value="">Min</option>
+                    <option>00</option>
+                    <option>15</option>
+                    <option>30</option>
+                    <option>45</option>
+                  </select>
+
+                  <select
+                    name="ampm"
+                    class="bg-[#EBCCB4] h-[4vh] w-[20vw] md:px-[2vw] md:h-[6vh] md:w-[24vw] lg:h-[7vh] lg:w-[26vw] md:text-[2.5vh] lg:text-[3.5vh] text-[1.5vh] rounded-md border"
+                    required
+                  >
+                    <option value="">AM/PM</option>
+                    <option>AM</option>
+                    <option>PM</option>
+                  </select>
+                </div>
+
+                <button
+                  type="submit"
+                  class="mt-[1vh] font-bold bg-[#EBCCB4] h-[4vh] w-full md:px-[2vw] md:h-[6vh] md:w-[24vw] lg:h-[7vh] lg:w-[26vw] text-[1.5vh] md:text-[3vh] lg:text-[4vh] rounded-md border"
+                  required
+                >
+                  Confirm Booking
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div className="w-[50vw] h-full">
             <div className="">
               <img
                 src="https://res.cloudinary.com/dw3n9vflw/image/upload/v1761162337/Frame_20_yktd4a.jpg"
-                className=""
+                className="w-full sm:h-[48vh] md:h-[55vh] lg:h-[62vh] h-[35vh]"
               ></img>
               <img
                 src="https://res.cloudinary.com/dw3n9vflw/image/upload/v1761940959/Frame_22_1_tihnuq.jpg"
-                className=""
+                className="w-full"
               ></img>
             </div>
           </div>
         </div>
       </sixthsection>
 
-      <seventhsection>
+      <seventhsection id="services">
         <div className="w-full h-[13vh] md:h-[20vh] lg:h-[25vh] overflow-hidden bg-[#2B1E1A]">
           <p className="text-[#861D1D] itelianno flex justify-center pt-[2vh] items-center font-normal text-[10vw] md:text-[8vw]">
             Our Services
@@ -185,7 +257,7 @@ function App() {
       </seventhsection>
 
       <eightsection>
-        <div className="w-full h-[40vh] md:h-[100vh] bg-[#E8E2D1]">
+        <div className="w-full h-[40vh] md:h-[75vh] lg:h-[100vh] bg-[#E8E2D1]">
           <div className="flex justify-center items-top flex-row py-[1vh] px-[3vw] gap-[7vw]">
             <p className="itelianno font-normal text-[10vw]">Birthdays</p>
             <p className="itelianno font-normal text-[10vw]">Weddings</p>
@@ -239,13 +311,6 @@ function App() {
           </p>
         </div>
       </ninesection>
-
-      <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/menu" element={<Menu />} />
-        </Routes>
-      </main>
     </Router>
   );
 }
