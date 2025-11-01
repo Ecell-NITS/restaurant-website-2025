@@ -2,7 +2,7 @@
 
 .App {
   font-family: 'Lily Script One', cursive;
-  background: url('/image.png') center/cover no-repeat fixed;
+  background: url('../../assets/images/image.png') center/cover no-repeat fixed;
   background-position: centre;
   background-size: cover;
   background-repeat:no-repeat;

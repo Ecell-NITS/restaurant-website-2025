@@ -1,0 +1,24 @@
+[
+  {
+    "_id": "1",
+    "name": "Veg Pizza",
+    "description": "Loaded with cheese and veggies",
+    "price": 250,
+    "image": "/src/assets/images/food.jpg",
+    "category": "main"
+  },{
+      "_id": "1",
+    "name": "Veg Pizza",
+    "description": "Loaded with cheese and veggies",
+    "price": 250,
+    "image": "/src/assets/images/food.jpg",
+    "category": "beverage"
+  },{
+    "_id": "2",
+    "name": "Cold Coffee",
+    "description": "Chilled creamy coffee",
+    "price": 120,
+    "image": "/src/assets/images/food.jpg",
+    "category": "beverage"
+  }
+]

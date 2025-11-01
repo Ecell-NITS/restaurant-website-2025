@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home/home";
 import Menu from "./pages/Menu/menu";
 import "./App.css";
+import logo from './assets/images/logo.jpg';
+import bg from './assets/images/image.png';
 
 function App() {
   return (
@@ -11,8 +13,8 @@ function App() {
       <header className="navbar">
         {/* Left side: Logo */}
         <div className="logo-container">
-          <img src="/logo.jpg" alt="Restaurant Logo" className="nav-logo" />
-          <h1 className="brand-name">Bon Ton</h1>
+          <img src={logo} alt="Restaurant Logo" className="nav-logo" />
+          
         </div>
 
         {/* Center: Navigation Links */}
