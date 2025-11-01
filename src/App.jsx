@@ -20,6 +20,7 @@ function App() {
           </Link>
           <Link to="/checkout" className="text-blue-600 hover:underline">
             checkout
+          </Link>
           <Link to="/cart" className="text-blue-600 hover:underline">
             Cart
           </Link>

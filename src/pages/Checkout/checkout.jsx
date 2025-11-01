@@ -14,8 +14,12 @@ function CheckoutMine() {
 
   useEffect(() => {
     fetch('/data/cartItems.json')
-      .then((res) => res.json())
+      .then((res) => {
+        console.log('Response:', res);
+        return res.json();
+      })
       .then((data) => {
+        console.log('Cart data loaded:', data);
         setCartItems(data);
         setLoading(false);
       })
@@ -58,7 +62,7 @@ function CheckoutMine() {
         <div>
           <div className="flex justify-between">
             <h3 className="text-4xl ml-3 mb-3 font-medium p-1">Your Order</h3>
-            <h3 className="text-md text-[hsl(0,64%,32%)] border-2 border-blue-900 font-medium p-1 pt-2 mr-4 mb-3 rounded-3xl">
+            <h3 className="text-lg text-[hsl(0,64%,32%)]   font-medium p-1 pt-2 mr-4 mb-3 rounded-3xl">
               Amount
             </h3>
           </div>
