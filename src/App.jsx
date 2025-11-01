@@ -4,7 +4,7 @@ import Home from "./pages/Home/home";
 import Menu from "./pages/Menu/menu";
 import "./App.css";
 import logo from './assets/images/logo.jpg';
-import bg from './assets/images/image.png';
+
 
 function App() {
   return (
